@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@900&display=swap");
+* {
+  box-sizing: border-box;
+}
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+body {
+  background-image: url("./../images/imgBackground.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 98vh;
+  margin: 0px;
+}
+#snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
+h1 {
+  font-family: "Roboto";
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  font-weight: normal;
+  font-size: 4rem !important;
+  margin-bottom: 5rem !important;
+  color: rgba(37, 42, 51, 0.911);
+}
+.countdown-container {
+  padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.big-text {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 1rem 3rem;
+  color: rgba(37, 42, 51, 0.911);
+}
+.countdown-element {
+  text-align: center;
+}
+.countdown-element span {
+  color: rgba(37, 42, 51, 0.911);
+  font-family: "Roboto";
+  font-size: 1.3rem;
+}
+.title-Counterdown {
+  display: flex;
+  justify-content: center;
+}
+
+/* ***************** NAVBAR ****************** */
+
+.navbarDB {
+  background-color: rgba(1, 3, 8, 0.911);
+  height: auto;
+  margin: 0px !important;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.navCont {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.imgNavbar {
+  width: 5.5rem;
+}
+
+/* ***************** BURGER NAV ****************** */
+.menuCont {
+  width: 10rem;
+  display: flex;
+  justify-content: right;
+}
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn-burger {
+  width: 30px;
+  height: 3px;
+  background: #dadada;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #dadada;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn-burger::before {
+  transform: translateY(-8px);
+}
+.menu-btn-burger::after {
+  transform: translateY(8px);
+}
+.menu-btn.open .menu-btn-burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn-burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn-burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* ***************** MENU LATERAL ****************** */
+aside {
+  position: absolute;
+  width: 350px;
+  left: 0;
+  height: 92.8vh;
+  color: #909090;
+  overflow-y: hidden;
+  background-color: rgba(1, 3, 8, 0.911);
+  transition: all 0.5s ease-in-out;
+  border-top: 0.5px solid #505050;
+}
+aside:hover {
+  overflow-y: auto;
+}
+aside::-webkit-scrollbar {
+  width: 8px;
+}
+aside::-webkit-scrollbar-thumb {
+  background-color: #909090;
+  border-radius: 5px;
+}
+aside a:link,
+aside a:visited {
+  text-decoration: none;
+  color: #fff !important;
+}
+.desplegar {
+  transform: translateX(-100%);
+}
+.cont-items {
+  border-bottom: 0.5px solid #505050;
+  padding: 10px 1px;
+  color: #dadada;
+}
+.cont-items div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.cont-items div:hover {
+  background-color: #303030;
+}
+.cont-items div span {
+  margin-left: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+aside h3 {
+  padding: 10px 20px;
+  color: #aaaaaa;
+}
+.iconMenu {
+  width: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    min-height: 100vh;
+  }
+  .big-text {
+    font-size: 3.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  /* ***************** NAVBAR ****************** */
+  .navCont {
+    width: 90%;
+    height: auto;
+  }
+
+  /* ***************** MENU LATERAL ****************** */
+  aside {
+    height: 91.4vh;
+  }
+}
