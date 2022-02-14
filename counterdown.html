@@ -6,6 +6,7 @@
     <title>Counter Down Timer - Dan Projects</title>
     <link rel="icon" href="./images/Favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./counterdown/style.css" />
+    <link rel="stylesheet" href="./navStyle.css" />
     <script src="./counterdown/javascript.js" defer></script>
     <script
       src="https://kit.fontawesome.com/33bbdc4b18.js"
@@ -19,6 +20,7 @@
     />
   </head>
   <body>
+    <div id="snow"></div>
     <nav>
       <div class="navbarDB">
         <div class="navCont">
@@ -29,14 +31,6 @@
               alt="dburbano logo"
           /></a>
           <div class="menuCont">
-            <!-- <div class="return-btn">
-              <a class="returnLink" href="/danProjects">
-                <i class="fa-solid fa-angle-left"
-                  ><span class="return-text"> Return</span></i
-                >
-              </a>
-            </div>
-            <div class="separatorLine"></div> -->
             <div class="menu-btn">
               <div class="menu-btn-burger"></div>
             </div>
@@ -47,7 +41,7 @@
     <aside id="aside" class="desplegar">
       <div class="latMenu">
         <div class="cont-items">
-          <a href="/danProjects/">
+          <a href="/">
             <div>
               <i fill="#909090!important" class="iconMenu fa-solid fa-house"></i
               ><span>Inicio</span>
@@ -62,23 +56,23 @@
         </div>
         <div class="cont-items">
           <h3>Proyectos</h3>
-          <a href="/danProjects/counterdown.html">
+          <a href="/counterdown.html">
             <div>
               <i class="iconMenu fa-regular fa-clock"></i>
               <span>Counter Down Timer</span>
             </div>
           </a>
 
-          <a href="/danProjects/quizapp.html">
+          <a href="/quizapp.html">
             <div>
               <i class="iconMenu fa-solid fa-question"></i>
               <span>Quiz App</span>
             </div>
           </a>
-          <a href="">
+          <a href="/recipeapp.html">
             <div>
-              <i class="iconMenu fa-regular fa-clock"></i>
-              <span>Coming soon</span>
+              <i class="iconMenu fa-solid fa-utensils"></i>
+              <span>Recipe App</span>
             </div>
           </a>
         </div>
@@ -110,7 +104,6 @@
       </div>
     </aside>
     <section>
-      <div id="snow"></div>
       <div class="countdown-container">
         <div class="countdown-element c-days">
           <p class="big-text" id="days">0</p>

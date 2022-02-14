@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App - Dan Projects</title>
+    <link rel="icon" href="./images/Favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./recipeapp/style.css" />
+    <link rel="stylesheet" href="./navStyle.css" />
+    <script src="./recipeapp/javascript.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/33bbdc4b18.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navbarDB">
+        <div class="navCont">
+          <a href="https://dburbano.com">
+            <img
+              class="imgNavbar"
+              src="./images/LOGODB3-01.png"
+              alt="dburbano logo"
+          /></a>
+          <div class="menuCont">
+            <div class="menu-btn">
+              <div class="menu-btn-burger"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <aside id="aside" class="desplegar">
+      <div class="latMenu">
+        <div class="cont-items">
+          <a href="/">
+            <div>
+              <i fill="#909090!important" class="iconMenu fa-solid fa-house"></i
+              ><span>Inicio</span>
+            </div></a
+          >
+          <a target="_blank" href="https://dburbano.com">
+            <div>
+              <i class="iconMenu fa-regular fa-newspaper"></i>
+              <span>CV Daniel Burbano</span>
+            </div>
+          </a>
+        </div>
+        <div class="cont-items">
+          <h3>Proyectos</h3>
+          <a href="/counterdown.html">
+            <div>
+              <i class="iconMenu fa-regular fa-clock"></i>
+              <span>Counter Down Timer</span>
+            </div>
+          </a>
+
+          <a href="/quizapp.html">
+            <div>
+              <i class="iconMenu fa-solid fa-question"></i>
+              <span>Quiz App</span>
+            </div>
+          </a>
+          <a href="/recipeapp.html">
+            <div>
+              <i class="iconMenu fa-solid fa-utensils"></i>
+              <span>Recipe App</span>
+            </div>
+          </a>
+        </div>
+        <div class="cont-items">
+          <h3>Redes sociales</h3>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/daniel-burbano-pozo-32193a201/"
+          >
+            <div>
+              <i class="iconMenu fa-brands fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </div></a
+          >
+
+          <a target="_blank" href="https://github.com/dan984git">
+            <div>
+              <i class="iconMenu fa-brands fa-github"></i>
+              <span>Github</span>
+            </div></a
+          >
+          <a target="_blank" href="https://www.instagram.com/dani.burbano98/">
+            <div>
+              <i class="iconMenu fa-brands fa-instagram"></i>
+              <span>Instagram</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </aside>
+    <section>
+      <div class="row">
+        <div>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+        </div>
+        <div>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+        </div>
+        <div>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+        </div>
+        <div>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+        </div>
+        <div>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+        </div>
+        <div>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+        </div>
+        <div>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+        </div>
+        <div>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+        </div>
+        <div>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+          <i class="icon-bg fa-solid fa-bacon"></i>
+          <i class="icon-bg fa-solid fa-burger"></i>
+          <i class="icon-bg fa-solid fa-carrot"></i>
+          <i class="icon-bg fa-solid fa-egg"></i>
+          <i class="icon-bg fa-solid fa-utensils"></i>
+          <i class="icon-bg fa-solid fa-apple-whole"></i>
+          <i class="icon-bg fa-solid fa-bread-slice"></i>
+          <i class="icon-bg fa-solid fa-cheese"></i>
+          <i class="icon-bg fa-solid fa-cookie"></i>
+          <i class="icon-bg fa-solid fa-drumstick-bite"></i>
+          <i class="icon-bg fa-solid fa-fish"></i>
+          <i class="icon-bg fa-solid fa-hotdog"></i>
+          <i class="icon-bg fa-solid fa-ice-cream"></i>
+          <i class="icon-bg fa-solid fa-lemon"></i>
+          <i class="icon-bg fa-solid fa-pizza-slice"></i>
+          <i class="icon-bg fa-solid fa-shrimp"></i>
+          <i class="icon-bg fa-solid fa-stroopwafel"></i>
+          <i class="icon-bg fa-solid fa-wine-glass"></i>
+          <i class="icon-bg fa-solid fa-whiskey-glass"></i>
+          <i class="icon-bg fa-solid fa-pepper-hot"></i>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./javascript.js" defer></script>
+  </body>
+</html>
