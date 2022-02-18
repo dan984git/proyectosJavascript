@@ -4,6 +4,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+.ocultar {
+  display: none;
+}
+.header-container button:focus,
+button select,
+input {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: block;
+}
+.meal-body button:focus,
+button select {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: block;
+}
+.info-header button:focus,
+button select {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: block;
+}
 section {
   position: absolute !important;
   top: 0;
@@ -13,7 +38,7 @@ section {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  z-index: -1;
+  z-index: -2;
 }
 .row {
   position: relative;
@@ -35,8 +60,9 @@ section {
   padding: 0 5px;
   user-select: none;
   cursor: default;
+  z-index: -1;
 }
-.icon-bg:hover {
+.hover-icon {
   transition: 0s;
   color: #ff9f19;
   text-shadow: 0 0 120px #ff9f19;
@@ -117,4 +143,283 @@ section .row:nth-child(even) div:nth-child(2) {
       transform: translateX(-100%);
     }
   }
+}
+.recipeapp {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.mobile-container {
+  width: 325px;
+  max-width: 325px;
+  height: 700px;
+  overflow: hidden;
+  background-color: #c6c6c6;
+  border-radius: 10px;
+  z-index: -1;
+}
+.iphone-img-container {
+  position: absolute;
+  top: 160px;
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-radius: 10px 10px 0 0;
+}
+.header-container input {
+  background-color: rgb(218, 218, 218);
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  margin-right: 10px;
+}
+.header-container button {
+  background-color: none;
+  border: none;
+  padding-left: 5px;
+  font-size: 1.5rem;
+}
+img {
+  max-width: 100%;
+}
+.fav-container {
+  width: 100%;
+  height: auto;
+  background-color: rgb(218, 218, 218);
+  text-align: center;
+}
+.fav-container h5 {
+  margin-bottom: 0px !important;
+  font-size: 1rem !important;
+  padding-top: 5px;
+}
+.fav-meals {
+  margin-bottom: 0px !important;
+  display: flex;
+  align-items: flex-start;
+  list-style-type: none;
+  padding: 0 10px;
+  overflow-x: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.fav-meals::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+.fav-meals::-webkit-scrollbar-thumb {
+  background-color: #909090;
+  border-radius: 5px;
+}
+.fav-meals li {
+  position: relative;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  margin-left: 2px;
+  margin-right: 2px;
+  max-width: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fav-meals li img {
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px 2px #3333331a;
+  border-radius: 50%;
+  object-fit: cover;
+  height: 60px;
+  width: 60px;
+}
+.fav-meals li span {
+  width: 65px;
+  height: auto;
+  padding-left: 1px;
+  padding-right: 1px;
+  font-size: 0.68rem;
+  font-weight: bold;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+.btn-remove-fav {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 1.1rem;
+  color: #ff9f19;
+  text-shadow: 0 0 5px #000000;
+  cursor: pointer;
+}
+.fav-div {
+  cursor: pointer;
+}
+.meals-container {
+  padding-right: 0px !important;
+  overflow-y: auto;
+  width: 100%;
+  height: 500px;
+}
+.meals-container::-webkit-scrollbar {
+  position: absolute;
+  width: 8px;
+}
+.meals-container::-webkit-scrollbar-thumb {
+  background-color: #909090;
+  border-radius: 5px;
+}
+.meals {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+}
+.meals span {
+  position: absolute;
+  top: 30px;
+  background-color: #f0f0f0;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.meal {
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 7.5px;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px 2px #3333333f;
+}
+.meal-header img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  border-radius: 7.5px 7.5px 0 0;
+  cursor: pointer;
+}
+.meal-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.meal-body h4 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.2rem !important;
+  font-weight: bold;
+  margin-bottom: 0px !important;
+  cursor: pointer;
+}
+.meal-body .fav-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: gray;
+  cursor: pointer;
+}
+.meal-body .fav-btn.fav {
+  color: red;
+}
+.meals-container h5 {
+  font-size: 1.5rem !important;
+  color: #909090;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .fav-meals::-webkit-scrollbar {
+    width: 8px;
+    height: 0px;
+  }
+  .fav-meals::-webkit-scrollbar-thumb {
+    background-color: #909090;
+    border-radius: 5px;
+  }
+}
+
+.meal-info {
+  width: 325px;
+  max-width: 325px;
+  height: 700px;
+  overflow: hidden;
+  background-color: #c6c6c6;
+  border-radius: 10px;
+  z-index: -1;
+}
+.info-header {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-radius: 10px 10px 0 0;
+}
+.return-btn {
+  position: absolute;
+  margin: auto;
+  left: 5px;
+  border: none;
+  font-size: 1.4rem;
+  width: 30px;
+  cursor: pointer;
+}
+.info-title {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 80%;
+  margin-bottom: 0px !important;
+}
+.info-img {
+  padding: 15px;
+  width: 100%;
+  border-radius: 10%;
+}
+.info-body {
+  padding: 15px;
+  width: 100%;
+  height: 635px;
+  overflow-y: auto;
+}
+.info-body::-webkit-scrollbar {
+  position: absolute;
+  width: 8px;
+}
+.info-body::-webkit-scrollbar-thumb {
+  background-color: #909090;
+  border-radius: 5px;
+}
+
+.info-body h5{
+  text-align: center;
+}
+
+.info-body ul{
+  padding: 15px;
 }

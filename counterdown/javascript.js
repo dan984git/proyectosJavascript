@@ -16,14 +16,14 @@ function countDown() {
   const mins = Math.floor(totalSeconds / 60) % 60;
   const secs = Math.floor(totalSeconds) % 60;
 
-  daysElement.innerHTML = days;
-  hoursElement.innerHTML = hours;
-  minutesElement.innerHTML = mins;
-  secondsElement.innerHTML = secs;
+  daysElement.innerHTML = formatTime(days);
+  hoursElement.innerHTML = formatTime(hours);
+  minutesElement.innerHTML = formatTime(mins);
+  secondsElement.innerHTML = formatTime(secs);
+}
 
-  function formatTime(time) {
-    return time < 10 ? `0${time}` : time;
-  }
+function formatTime(time) {
+  return time < 10 ? `0${time}` : time;
 }
 
 countDown();
@@ -94,5 +94,3 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   document.head.append(script);
 });
-
-
